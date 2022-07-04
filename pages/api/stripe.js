@@ -62,7 +62,7 @@ export default async function handler(req, res) {
           };
         }),
         success_url: `${req.headers.origin}/success`,
-        cancel_url: `${req.headers.origin}/canceled`,
+        cancel_url: `${req.headers.origin}/?canceled=true`,
       };
       // Create Checkout Sessions from body params.
       // @ts-ignore
